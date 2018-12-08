@@ -1,43 +1,12 @@
-                    # lci - a LOLCODE interpreter written in C
-
-# LICENSE
-
-    Copyright (C) 2010-2014 Justin J. Meza
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
 # ABOUT
 
-lci is a LOLCODE interpreter written in C and is designed to be correct,
+LMAONADE STAND is a modern take on the classic game of supply and demand.
+
+Written in LOLCODE mostly for the lolz, the game can be run using lci, a LOLCODE interpreter written in C and designed to be correct,
 portable, fast, and precisely documented.
 
-    - correct: Every effort has been made to test lci's conformance to the
-          LOLCODE language specification. Unit tests come packaged with the lci
-          source code.
-    - portable: lci follows the widely ported ANSI C specification allowing it
-          to compile on a broad range of systems.
-    - fast: Much effort has gone into producing simple and efficient code
-          whenever possible to the extent that the above points are not
-          compromised.
-    - precisely documented: lci uses Doxygen to generate literate code
-          documentation, browsable here.
-
-This project's homepage is at http://lolcode.org.  For help, visit
-http://groups.google.com/group/lci-general.  To report a bug, go to
-http://github.com/justinmeza/lci/issues.
-
-Created and maintained by Justin J. Meza <justin.meza@gmail.com>.
+The LOLCODE project homepage is at http://lolcode.org.  For help, visit
+http://groups.google.com/group/lci-general.
 
 # PREREQUISITES
 
@@ -46,32 +15,13 @@ Created and maintained by Justin J. Meza <justin.meza@gmail.com>.
     your repositories.
 
 2. Python 2.7+ or Python 2.x with the argparse module installed.
-
-# INSTALLATION: THE EASY WAY ON LINUX OR MAC OSX
-
-1. run the script install.py. Note that
-
-  $ ./install.py -h
-
-  will display a list of relavent install options. For
-  example, if I wanted to install lci to the directory
-  "/home/kurtis/opt" I would run:
-
-  $ ./install.py --prefix="/home/kurtis/opt"
   
-
-# INSTALLATION: THE MORE INVOLVED WAY ON LINUX OR MAC OSX
+# INSTALLATION ON LINUX OR MAC OSX
 
 1. Configure lci using CMake. This can be as simple as opening up the terminal, 
   navigating to the directory containing lci and typing:
 
   $ cmake .
-
-  You can also provide any other argument to the CMake configuration process
-  you'd like. To enable Memory testing turn the PERFORM_MEM_TESTS option on
-  like so:
-
-  $ cmake -DPERFORM_MEM_TESTS:BOOL=ON .
 
   You can also use the "ccmake" command or the CMake GUI if you prefer.
   See the cmake documentation for more details.
@@ -84,18 +34,11 @@ Created and maintained by Justin J. Meza <justin.meza@gmail.com>.
    
   $ make install
 
-4. (Optional) Build documentation:
+5. Run game:
 
-  $ make docs
-
-5. (Optional) Run tests:
-
-  $ ctest
+  $ lci lmaonade-stand.lol
 
 # INSTALLATION ON WINDOWS
-
-(Note that the instructions were written from the point of view of Windows 7,
-but in practice, any modern version will work.)
 
 1. Add MinGW and Python to your PATH.
 
